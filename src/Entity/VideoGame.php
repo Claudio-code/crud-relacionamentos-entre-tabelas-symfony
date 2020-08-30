@@ -76,6 +76,7 @@ class VideoGame implements \JsonSerializable
     public function jsonSerialize(): array
     {
         return [
+            "id" => $this->getId(),
             "name" => $this->getName(),
             "createdAt" => $this->getCreatedAt(),
             "updatedAt" => $this->getUpdatedAt()
